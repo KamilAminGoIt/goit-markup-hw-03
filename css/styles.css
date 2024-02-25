@@ -177,7 +177,6 @@ img {
   text-decoration: none;
   color: #4d5ae5;
   margin-right: 76px;
-  display: inline-block;
 }
 
 .logo-top {
@@ -251,6 +250,7 @@ address .link {
 }
 
 .article {
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
