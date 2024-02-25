@@ -192,6 +192,10 @@ footer .logo {
   margin-bottom: 16px;
 }
 
+.footer .logo {
+  display: inline-block;
+}
+
 .link {
   text-decoration: none;
   color: #2e2f42;
