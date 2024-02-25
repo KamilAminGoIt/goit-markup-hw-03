@@ -12,9 +12,9 @@ p {
   margin: 0;
 }
 
-ul,
-menu {
+ul {
   list-style: none;
+  padding: 0;
 }
 
 img {
@@ -24,13 +24,16 @@ img {
 /* MAIN STYLES */
 
 .container {
+  display: flex;
+  flex-direction: column;
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-.header-container {
-  display: flex;
+.header .container {
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .header {
@@ -58,7 +61,7 @@ img {
   padding: 24px 0;
 }
 
-menu > .link {
+.header .link {
   padding: 24px 0;
 }
 
@@ -68,10 +71,7 @@ menu > .link {
   padding: 188px 0;
 }
 
-.hero > .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.hero .container {
   align-items: center;
   gap: 48px;
 }
@@ -103,14 +103,7 @@ menu > .link {
 .our-team {
   background-color: #f4f4fd;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   padding: 120px 0;
-}
-
-.section-header {
-  margin-bottom: 72px;
 }
 
 .team-card .section-subheader {
@@ -138,12 +131,8 @@ menu > .link {
   gap: 24px;
 }
 
-.protfolio {
-  padding: 120px 0 120px 0;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.portfolio {
+  padding: 120px 0;
 }
 
 .portfolio-list {
@@ -170,9 +159,6 @@ menu > .link {
 .footer {
   background-color: #2e2f42;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   padding: 100px 0;
 }
 
@@ -277,4 +263,19 @@ address .link {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
+
+  margin-bottom: 72px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
