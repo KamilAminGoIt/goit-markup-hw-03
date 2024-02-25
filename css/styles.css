@@ -177,6 +177,7 @@ img {
   text-decoration: none;
   color: #4d5ae5;
   margin-right: 76px;
+  /* display: inline-block; */
 }
 
 .logo-top {
@@ -187,7 +188,7 @@ img {
   color: #f4f4fd;
 }
 
-.footer .logo {
+footer .logo {
   display: inline-block;
   margin-bottom: 16px;
 }
